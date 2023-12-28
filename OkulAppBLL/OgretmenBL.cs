@@ -20,7 +20,7 @@ namespace OkulAppBLL
 
                 };
                 var hlp = new Helper();
-                return hlp.ExecuteNonQuery("Insert into tblogrenciler (ad,soyad,tc) values(@ad,@soyad,@tc) ", p) > 0;
+                return hlp.ExecuteNonQuery("Insert into tblogretmenler (ad,soyad,tc) values(@ad,@soyad,@tc) ", p) > 0;
             }
 
             catch (SqlException)
